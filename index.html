@@ -1,12 +1,245 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Нёрдс</title>
+</head>
 
-  </body>
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <div class="header__logo">
+        <img src="http://placehold.it/160x65" alt="Студия Нёрдс" width="160" height="65">
+      </div>
+      <nav class="header__nav nav">
+        <ul class="nav__list nav__list--main">
+          <li class="nav__item">
+            <a class="nav__link" href="#">Студия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Клиенты</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="catalog.html">Магазин</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Контакты</a>
+          </li>
+        </ul>
+
+        <ul class="nav__list nav__list--order">
+          <li class="nav__item">
+            <a class="nav__link" href="#">
+              <span class="nav__icon nav__icon--cart" aria-hidden="true"></span>Корзина
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <h1>Дизайн-студия Нёрдс</h1>
+
+    <section class="main__intro intro">
+      <div class="intro__container container">
+        <h2 class="visually-hidden">Наши особенности</h2>
+        <div class="intro__slider">
+          <div class="intro__slide">
+            <div class="intro__text">
+              <p class="intro__lead">Долго, дорого, скрупулезно.</p>
+              <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+            </div>
+            <img class="intro__img" src="http://placehold.it/698x413" alt="Мобильные приложения" width="698" height="413">
+          </div>
+          <div class="intro__slide">
+            <div class="intro__text">
+              <p class="intro__lead">Любим математику как никто другой.</p>
+              <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+            </div>
+            <img class="intro__img" src="http://placehold.it/663x430" alt="Идеальные пропорции сайтов" width="663" height="430">
+          </div>
+          <div class="intro__slide">
+            <div class="intro__text">
+              <p class="intro__lead">Только ночь, только хардкор</p>
+              <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+            </div>
+            <img class="intro__img" src="http://placehold.it/759x411" alt="Идеальные пропорции сайтов" width="759" height="411">
+          </div>
+        </div>
+
+        <ul class="intro__switches">
+          <li>
+            <button class="intro__switch" type="button">1</button>
+          </li>
+          <li>
+            <button class="intro__switch" type="button">2</button>
+          </li>
+          <li>
+            <button class="intro__switch" type="button">3</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="main__container container">
+      <section class="services">
+        <h2 class="visually-hidden">Услуги</h2>
+        <ul class="services__list">
+          <li class="services__item">
+            <div class="services__info">
+              <h3 class="services__title">Веб-сайты</h3>
+              <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+              <a class="services__link btn" href="#">Заказать</a>
+            </div>
+            <a class="services__img-link" href="#">
+              <img class="services__img" src="http://placehold.it/300x146" width="300" height="146" alt="Веб-сайты">
+            </a>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <h3 class="services__title">Приложения</h3>
+              <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+              <a class="services__link btn btn--green" href="#">Заказать</a>
+            </div>
+            <a class="services__img-link" href="#">
+              <img class="services__img" src="http://placehold.it/300x146" width="300" height="146" alt="Приложения">
+            </a>
+          </li>
+          <li class="services__item">
+            <div class="services__info">
+              <h3 class="services__title">Презентации</h3>
+              <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+              <a class="services__link btn btn--yellow" href="#">Заказать</a>
+            </div>
+            <a class="services__img-link" href="#">
+              <img class="services__img" src="http://placehold.it/300x146" width="300" height="146" alt="Презентации">
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about">
+        <h2 class="visually-hidden">О студии</h2>
+        <div class="about__content content">
+          <p class="lead">Мы — маленькая, но гордая дизайн-студия из Краснодара.</p>
+          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h3 class="subtitle">Выполняем заказы на разработку:</h3>
+          <ul class="list">
+            <li>Веб-сайтов любой сложности</li>
+            <li>Мобильных приложений для iOS и Android</li>
+            <li>Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div class="about__statistics statistics">
+          <img class="statistics__img" src="http://placehold.it/360x208" width="360" height="208" alt="NЁRDS">
+          <h3 class="statistics__title">с 2004 года любим точность во всем:</h3>
+          <table class="statistics__data">
+            <tr class="statistics__item">
+              <td>Уровень самоотдачи</td>
+              <td><b class="statistics__value">146<sup class="statistics__unit">%</sup></b></td>
+            </tr>
+            <tr class="statistics__item">
+              <td>Соблюдение сроков</td>
+              <td><b class="statistics__value">100<sup class="statistics__unit">%</sup></b></td>
+            </tr>
+            <tr class="statistics__item">
+              <td>Минимальная предоплата</td>
+              <td><b class="statistics__value">50<sup class="statistics__unit">%</sup></b></td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="clients">
+        <h2 class="visually-hidden">Наши клиенты</h2>
+        <ul class="clients__list">
+          <li class="clients__item">
+            <a href="#">
+              <img class="clients__logo" src="http://placehold.it/199x68" width="199" height="68" alt="HTML Academy">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a href="#">
+              <img class="clients__logo" src="http://placehold.it/209x90" width="209" height="90" alt="Barbershop">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a href="#">
+              <img class="clients__logo" src="http://placehold.it/185x52" width="185" height="52" alt="Pink">
+            </a>
+          </li>
+          <li class="clients__item">
+            <a href="#">
+              <img class="clients__logo" src="http://placehold.it/173x84" width="173" height="84" alt="Mishka">
+            </a>
+          </li>
+        </ul>
+      </section>
+    </div>
+
+    <section class="contacts">
+      <h2 class="visually-hidden">Контактная информация</h2>
+      <img class="contacts__img-map" src="http://placehold.it/1440x416" width="1440" height="416" alt="Карта">
+      <div class="contacts__map" id="map"></div>
+      <div class="contacts__container container">
+        <div class="contacts__info">
+          <h3 class="contacts__title">Nёrds Design Studio</h3>
+          <address class="contacts__address">191186, Санкт-Петербург, ул.&nbsp;Б. Конюшенная, д. 19/8</address>
+          <p>тел. <a class="contacts__phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="contacts__btn btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__social">
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="#">вКонтакте</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--fb" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="#">Instagram</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__promo">
+        <p class="footer__lead">Давайте дружить, это выгодно!</p>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </div>
+  </footer>
+
+  <section class="popup">
+    <div class="popup__content">
+      <h2>Напишите нам</h2>
+
+      <form class="popup__form feedback" action="feedback" method="post" autocomplete="off">
+        <div class="feedback__row feedback__row--columns">
+          <div class="feedback__column text-field">
+            <label class="text-field__label" for="feedback-name">Ваше имя:</label>
+            <input class="text-field__input " type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
+          </div>
+          <div class="feedback__column text-field">
+            <label class="text-field__label" for="feedback-email">Ваше имя:</label>
+            <input class="text-field__input" type="email" name="email" id="feedback-email" placeholder="email@example.com">
+          </div>
+        </div>
+        <div class="feedback__row text-field">
+          <label class="text-field__label" for="feedback-comment">Текст письма:</label>
+          <textarea class="text-field__input text-field__input--textarea" name="comment" id="feedback-comment" placeholder="В свободной форме"></textarea>
+        </div>
+
+        <button class="feedback__btn btn" type="submit" name="feedback-button">Отправить</button>
+      </form>
+
+      <button class="popup__close" type="button">Закрыть</button>
+    </div>
+  </section>
+</body>
+
 </html>
