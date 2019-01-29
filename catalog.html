@@ -11,7 +11,7 @@
     <div class="header__container container">
       <div class="header__logo">
         <a href="index.html">
-          <img src="http://placehold.it/160x65" alt="Студия Нёрдс" width="160" height="65">
+          <img src="img/nerds-logo.svg" alt="Студия Нёрдс" width="160" height="65">
         </a>
       </div>
       <nav class="header__nav nav">
@@ -23,7 +23,7 @@
             <a class="nav__link" href="#">Клиенты</a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--active" href="#">Магазин</a>
+            <a class="nav__link nav__link--active">Магазин</a>
           </li>
           <li class="nav__item">
             <a class="nav__link" href="#">Контакты</a>
@@ -41,8 +41,10 @@
     </div>
   </header>
   <main class="main">
-    <header class="main__header">
-      <h1>Магазин готовых шаблонов</h1>
+    <header class="main__headline headline">
+      <div class="headline__container container">
+        <h1 class="headline__title">Магазин готовых шаблонов</h1>
+      </div>
     </header>
     <div class="main__container container">
       <div class="main__layout">
@@ -55,8 +57,8 @@
                 <div class="filters__range range">
                   <div class="range__scale">
                     <div class="range__scale-value"></div>
-                    <button class="range__control range__control--min" type="button" name="range-control">Минимум</button>
-                    <button class="range__control range__control--max" type="button" name="range-control">Максимум</button>
+                    <button class="range__control range__control--min" type="button">Минимум</button>
+                    <button class="range__control range__control--max" type="button">Максимум</button>
                   </div>
                 </div>
                 <div class="filters__price">
@@ -112,7 +114,7 @@
                   </div>
                 </div>
               </fieldset>
-              <button class="filters__btn btn btn--control" type="submit" name="filter-submit">Показать</button>
+              <button class="filters__btn btn btn--light" type="submit" name="filter-submit">Показать</button>
             </form>
           </section>
         </div>
@@ -159,71 +161,83 @@
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">Sedona</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">Sedona</h3>
+                    </a>
                     <p>Информационный сайт для туристов</p>
                     <a class="product__btn btn" href="#">9 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="Sedona">
+                  <img class="product__img" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">Pink App</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">Pink App</h3>
+                    </a>
                     <p>Продуктовый лендинг приложения для iOS и Android</p>
                     <a class="product__btn btn" href="#">15 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="Pink App">
+                  <img class="product__img" src="img/img-pink.jpg" width="360" height="576" alt="Pink App">
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">Barbershop</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">Barbershop</h3>
+                    </a>
                     <p>Сайт салоны красоты. Для мужчин, да.</p>
                     <a class="product__btn btn" href="#">20 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="Barbershop">
+                  <img class="product__img" src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">Mishka</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">Mishka</h3>
+                    </a>
                     <p>Интернет-магазин вязаных игрушек</p>
                     <a class="product__btn btn" href="#">21 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="Mishka">
+                  <img class="product__img" src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">A Plus</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">A Plus</h3>
+                    </a>
                     <p>Информационный сайт для туристов</p>
                     <a class="product__btn btn" href="#">7 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="A Plus">
+                  <img class="product__img" src="img/img-aplus.jpg" width="360" height="576" alt="A Plus">
                 </article>
               </li>
               <li class="catalog__item">
                 <article class="product">
                   <div class="product__info">
-                    <h3 class="product__title">Кваст</h3>
+                    <a class="product__link" href="#">
+                      <h3 class="product__title">Кваст</h3>
+                    </a>
                     <p>Промо-сайт производителя крафтового кваса</p>
                     <a class="product__btn btn" href="#">7 900 руб.</a>
                   </div>
-                  <img class="product__img" src="http://placehold.it/360x576" width="360" height="576" alt="Кваст">
+                  <img class="product__img" src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
                 </article>
               </li>
             </ul>
 
             <div class="catalog__pagination pagination">
-              <a class="pagination__btn pagination__btn--prev btn btn--control hidden" href="#">Предыдущая</a>
+              <a class="pagination__btn pagination__btn--prev btn btn--light hidden" href="#">Предыдущая</a>
 
               <ul class="pagination__list">
-                <li class="pagination__item pagination__item--active">
-                  <a class="pagination__link" href="#">1</a>
+                <li class="pagination__item">
+                  <a class="pagination__link pagination__link--active">1</a>
                 </li>
                 <li class="pagination__item">
                   <a class="pagination__link" href="#">2</a>
@@ -233,7 +247,7 @@
                 </li>
               </ul>
 
-              <a class="pagination__btn pagination__btn--next btn btn--control" href="#">Следующая</a>
+              <a class="pagination__btn pagination__btn--next btn btn--light" href="#">Следующая</a>
             </div>
           </section>
         </div>
@@ -242,7 +256,7 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="contacts__img-map" src="http://placehold.it/1440x416" width="1440" height="416" alt="Карта">
+      <img class="contacts__img-map" src="img/map.jpg" width="1440" height="416" alt="Карта">
       <div class="contacts__map" id="map"></div>
       <div class="contacts__container container">
         <div class="contacts__info">
@@ -259,13 +273,13 @@
       <div class="footer__social">
         <ul class="social">
           <li class="social__item">
-            <a class="social__link social__link--vk" href="#">вКонтакте</a>
+            <a class="social__link social__link--vk" href="#" target="_blank" title="вКонтакте">вКонтакте</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--fb" href="#">Facebook</a>
+            <a class="social__link social__link--fb" href="#" target="_blank" title="Facebook">Facebook</a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--insta" href="#">Instagram</a>
+            <a class="social__link social__link--insta" href="#" target="_blank" title="Instagram">Instagram</a>
           </li>
         </ul>
       </div>
