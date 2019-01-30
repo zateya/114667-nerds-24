@@ -9,11 +9,9 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <div class="header__logo">
-        <a href="index.html">
-          <img src="img/nerds-logo.svg" alt="Студия Нёрдс" width="160" height="65">
-        </a>
-      </div>
+      <a class="header__logo" href="index.html">
+        <img src="img/nerds-logo.svg" alt="Студия Нёрдс" width="160" height="65">
+      </a>
       <nav class="header__nav nav">
         <ul class="nav__list nav__list--main">
           <li class="nav__item">
@@ -52,8 +50,8 @@
           <section class="filters">
             <h2 class="visually-hidden">Фильтр шаблонов</h2>
             <form class="filters__form" action="filter" method="get">
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Стоимость:</legend>
+              <fieldset class="filters__set">
+                <legend class="filters__set-name">Стоимость:</legend>
                 <div class="filters__range range">
                   <div class="range__scale">
                     <div class="range__scale-value"></div>
@@ -72,44 +70,44 @@
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Сетка:</legend>
+              <fieldset class="filters__set">
+                <legend class="filters__set-name">Сетка:</legend>
                 <div class="filters__radio-fields">
                   <div class="filters__radio radio">
-                    <input class="radio__input" type="radio" name="grid" id="adaptive-grid" checked>
+                    <input class="radio__input" type="radio" name="grid" id="adaptive-grid" value="adaptive" checked>
                     <label class="radio__label" for="adaptive-grid">Адаптивная</label>
                   </div>
                   <div class="filters__radio radio">
-                    <input class="radio__input" type="radio" name="grid" id="fixed-grid">
+                    <input class="radio__input" type="radio" name="grid" id="fixed-grid" value="fixed">
                     <label class="radio__label" for="fixed-grid">Фиксированная</label>
                   </div>
                   <div class="filters__radio radio">
-                    <input class="radio__input" type="radio" name="grid" id="liquid-grid">
+                    <input class="radio__input" type="radio" name="grid" id="liquid-grid" value="liquid">
                     <label class="radio__label" for="liquid-grid">Резиновая</label>
                   </div>
                 </div>
               </fieldset>
-              <fieldset class="filters__fieldset">
-                <legend class="filters__legend">Особенности:</legend>
+              <fieldset class="filters__set">
+                <legend class="filters__set-name">Особенности:</legend>
                 <div class="filters__checkbox-fields">
                   <div class="filters__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="features" id="slider-feature" checked>
+                    <input class="checkbox__input" type="checkbox" name="features" id="slider-feature" value="slider" checked>
                     <label class="checkbox__label" for="slider-feature">Слайдер</label>
                   </div>
                   <div class="filters__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="features" id="advantages-feature">
+                    <input class="checkbox__input" type="checkbox" name="features" id="advantages-feature" value="advantages">
                     <label class="checkbox__label" for="advantages-feature">Блок преимуществ</label>
                   </div>
                   <div class="filters__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="features" id="news-feature" checked>
+                    <input class="checkbox__input" type="checkbox" name="features" id="news-feature" value="news" checked>
                     <label class="checkbox__label" for="news-feature">Новости</label>
                   </div>
                   <div class="filters__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="features" id="gallery-feature">
+                    <input class="checkbox__input" type="checkbox" name="features" id="gallery-feature" value="gallery">
                     <label class="checkbox__label" for="gallery-feature">Галерея</label>
                   </div>
                   <div class="filters__checkbox checkbox">
-                    <input class="checkbox__input" type="checkbox" name="features" id="cart-feature">
+                    <input class="checkbox__input" type="checkbox" name="features" id="cart-feature" value="cart">
                     <label class="checkbox__label" for="cart-feature">Корзина</label>
                   </div>
                 </div>
@@ -121,38 +119,33 @@
         <div class="main__info">
           <section class="sort">
             <h2 class="visually-hidden">Сортировка шаблонов</h2>
-            <form class="sort__form" action="sort" method="get">
-              <fieldset class="sort__fieldset">
-                <legend class="sort__legend">Сортировать:</legend>
+            <div class="sort__set">
+              <div class="sort__set-name">Сортировать:</div>
 
-                <div class="sort__options">
-                  <ul class="sort__list">
-                    <li class="sort__item">
-                      <input class="visually-hidden" type="radio" name="sort" id="price-sort" checked>
-                      <label class="sort__label" for="price-sort">По цене</label>
-                    </li>
-                    <li class="sort__item">
-                      <input class="visually-hidden" type="radio" name="sort" id="type-sort">
-                      <label class="sort__label" for="type-sort">По типу</label>
-                    </li>
-                    <li class="sort__item">
-                      <input class="visually-hidden" type="radio" name="sort" id="name-sort">
-                      <label class="sort__label" for="name-sort">По названию</label>
-                    </li>
-                  </ul>
-                  <ul class="sort__arrows arrows">
-                    <li class="arrows__item">
-                      <input class="visually-hidden" type="radio" name="up-down-sort" id="down-sort" checked>
-                      <label class="arrows__control arrows__control--down" for="down-sort">По убыванию</label>
-                    </li>
-                    <li class="arrows__item">
-                      <input class="visually-hidden" type="radio" name="up-down-sort" id="up-sort">
-                      <label class="arrows__control arrows__control--up" for="up-sort">По возрастанию</label>
-                    </li>
-                  </ul>
-                </div>
-              </fieldset>
-            </form>
+              <ul class="sort__list">
+                <li class="sort__item">
+                  <button class="sort__switch" type="button">По цене</button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__switch" type="button">По типу</button>
+                </li>
+                <li class="sort__item">
+                  <button class="sort__switch" type="button">По названию</button>
+                </li>
+              </ul>
+              <ul class="sort__arrows arrows">
+                <li class="arrows__item">
+                  <button class="arrows__control arrows__control--down" type="button">
+                    <span class="visually-hidden">По убыванию</span>
+                  </button>
+                </li>
+                <li class="arrows__item">
+                  <button class="arrows__control arrows__control--up" type="button">
+                    <span class="visually-hidden">По возрастанию</span>
+                  </button>
+                </li>
+              </ul>
+            </div>
           </section>
 
           <section class="catalog">
@@ -256,7 +249,7 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="contacts__img-map" src="img/map.jpg" width="1440" height="416" alt="Карта">
+      <img class="contacts__img-map" src="img/map.png" width="1440" height="416" alt="Карта">
       <div class="contacts__map" id="map"></div>
       <div class="contacts__container container">
         <div class="contacts__info">
@@ -270,19 +263,17 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__social">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#" target="_blank" title="вКонтакте">вКонтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" target="_blank" title="Facebook">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="#" target="_blank" title="Instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" target="_blank" title="вКонтакте">вКонтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" target="_blank" title="Facebook">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--insta" href="#" target="_blank" title="Instagram">Instagram</a>
+        </li>
+      </ul>
       <div class="footer__promo">
         <p class="footer__lead">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>

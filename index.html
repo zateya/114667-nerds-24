@@ -9,9 +9,9 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <div class="header__logo">
+      <a class="header__logo">
         <img src="img/nerds-logo.svg" alt="Студия Нёрдс" width="160" height="65">
-      </div>
+      </a>
       <nav class="header__nav nav">
         <ul class="nav__list nav__list--main">
           <li class="nav__item">
@@ -71,15 +71,15 @@
           </div>
         </div>
 
-        <ul class="intro__switches">
-          <li>
-            <button class="intro__switch" type="button">1</button>
+        <ul class="intro__dots dots">
+          <li class="dots__item">
+            <button class="dots__btn" type="button">1</button>
           </li>
-          <li>
-            <button class="intro__switch" type="button">2</button>
+          <li class="dots__item">
+            <button class="dots__btn" type="button">2</button>
           </li>
-          <li>
-            <button class="intro__switch" type="button">3</button>
+          <li class="dots__item">
+            <button class="dots__btn" type="button">3</button>
           </li>
         </ul>
       </div>
@@ -183,7 +183,7 @@
 
     <section class="contacts">
       <h2 class="visually-hidden">Контактная информация</h2>
-      <img class="contacts__img-map" src="img/map.jpg" width="1440" height="416" alt="Карта">
+      <img class="contacts__img-map" src="img/map.png" width="1440" height="416" alt="Карта">
       <div class="contacts__map" id="map"></div>
       <div class="contacts__container container">
         <div class="contacts__info">
@@ -197,19 +197,17 @@
   </main>
   <footer class="footer">
     <div class="footer__container container">
-      <div class="footer__social">
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__link social__link--vk" href="#" target="_blank" title="вКонтакте">вКонтакте</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--fb" href="#" target="_blank" title="Facebook">Facebook</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--insta" href="#" target="_blank" title="Instagram">Instagram</a>
-          </li>
-        </ul>
-      </div>
+      <ul class="footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#" target="_blank" title="вКонтакте">вКонтакте</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--fb" href="#" target="_blank" title="Facebook">Facebook</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--insta" href="#" target="_blank" title="Instagram">Instagram</a>
+        </li>
+      </ul>
       <div class="footer__promo">
         <p class="footer__lead">Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
