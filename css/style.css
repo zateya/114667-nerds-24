@@ -492,7 +492,7 @@ input.visually-hidden {
 
 .about__content {
   flex-grow: 1;
-  width: 700px;
+  width: 680px;
   padding-top: 75px;
   padding-bottom: 72px;
 }
@@ -528,7 +528,7 @@ input.visually-hidden {
 .about__statistics {
   flex-shrink: 0;
   width: 360px;
-  margin-left: 100px;
+  margin-left: 120px;
   padding-top: 40px;
   padding-bottom: 70px;
 }
