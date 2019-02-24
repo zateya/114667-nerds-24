@@ -81,14 +81,14 @@ input.visually-hidden {
 .headline {
   font-size: 55px;
   line-height: 55px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
 .title {
   font-size: 45px;
   line-height: 45px;
-  font-weight: 700;
+  font-weight: 500;
   color: #000000;
 }
 
@@ -449,7 +449,7 @@ input.visually-hidden {
   text-transform: uppercase;
 }
 
-.services__desc {
+.services__description {
   margin: 20px 0 0;
 }
 
@@ -1342,6 +1342,7 @@ input.visually-hidden {
   padding: 6px;
   overflow: auto;
   z-index: 5;
+  animation: fadescale 0.5s ease;
 }
 
 .popup--open::before {
@@ -1352,6 +1353,17 @@ input.visually-hidden {
   height: 100%;
   font-size: 0;
   line-height: 0;
+}
+
+@keyframes fadescale {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 .popup__content {
